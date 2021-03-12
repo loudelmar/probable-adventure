@@ -8,11 +8,24 @@
     --tertiary-color: grey;
 }
 
+body {
+    height: 512px;
+    border-bottom: 3px solid red;
+}
+
 header {
     border: 3px inset;
     display: flex;
     text-align: center;
-    
+}
+
+header nav {
+    display: flex;
+    margin: 3px 9px;
+    padding: 3px 9px;
+    border: 3px inset;
+    flex-direction: row;
+    justify-content: center;
 }
 
 header nav ul {
@@ -21,10 +34,22 @@ header nav ul {
     padding: 3px 9px;
     border: 3px inset;
     list-style: none;
+    flex-direction: row;
 }
 
 header nav ul li {
     border: 3px inset;
     margin: 0.5em;
     padding: 0.5em;
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+
+@media screen and (max-width: 320px) {
+    header nav {
+        flex-direction: column;
+    }
+    header nav ul {
+        flex-direction: column;
+    }
 }
