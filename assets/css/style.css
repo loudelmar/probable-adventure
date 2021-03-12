@@ -47,18 +47,16 @@ header nav ul li {
     background-color: var(--tertiary-color);
     color: var(--secondary-color);
     border: 3px inset;
-    margin: 0.5em;
     padding: 0.5% 64px;
+    margin: 0.5em;
 }
 
 main {
-    border: 3px inset;
-    height: 128px;
+    margin: 0 auto;
+    padding: 0 auto;
 }
 
 /* MEDIA QUERIES FOR SMALLER SCREENS */
-
-@media screen and (max-width: 1024px) {}
 
 @media screen and (max-width: 768px) {
     header nav ul li {
